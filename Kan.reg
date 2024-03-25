@@ -1,0 +1,13 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+
+HKEY_CLASSES_ROOT\Kan.Document = Kan Document
+HKEY_CLASSES_ROOT\Kan.Document\CLSID = {5CD806FA-472E-4A91-B651-822365B20DA8}
+
+HKEY_CLASSES_ROOT\CLSID\{5CD806FA-472E-4A91-B651-822365B20DA8} = Kan Document
+HKEY_CLASSES_ROOT\CLSID\{5CD806FA-472E-4A91-B651-822365B20DA8}\ProgId = Kan.Document
+HKEY_CLASSES_ROOT\CLSID\{5CD806FA-472E-4A91-B651-822365B20DA8}\LocalServer32 = KAN.EXE

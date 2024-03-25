@@ -1,0 +1,42 @@
+// Kan.odl : type library source for Kan.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (Kan.tlb).
+
+[ uuid(DC69F228-B64D-45FA-9F37-7A081B67B08A), version(1.0) ]
+library Kan
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CKanDoc
+	
+	[ uuid(88FF54F9-C87F-4E73-800B-6B2069BEE433) ]
+	dispinterface IKan
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CKanDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CKanDoc)
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CKanDoc
+	
+	[ uuid(5CD806FA-472E-4A91-B651-822365B20DA8) ]
+	coclass Document
+	{
+		[default] dispinterface IKan;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};
